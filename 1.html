@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" >
+	<title>Drny</title>
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #DDF0ED;
+		}
+		.box{
+			position: relative;
+			margin: 150px auto;
+			width: 528px;
+		}
+		#img{
+			width: 528px;
+			height: 422.39px;
+			display: block;
+			/*background: #000;*/
+			background: url(t017cc7ea75d7539b36.jpg);
+			background-size: contain;
+			transition: all 0.3s;
+			
+		}
+		.msg{
+			position: relative;
+			background-color: #fff;
+			height: 88px;
+		}
+		.msg a{
+			overflow: hidden;
+
+		}
+		.msg a i{
+			/*padding-top: 28px;
+			padding-left: 20px;*/
+			margin:28px 0 0 20px;
+			float: left;
+			line-height: 35px;
+			font-size: 35px;
+			color:rgb(50, 155, 176);
+		}
+		.msg a i:hover{
+			color: #e96b34;
+			transition: all 0.3s;
+		}
+		.box p{
+			font-family: "微软雅黑";
+		    font-size: 33px;
+		    color: #fff;
+		    position: absolute;
+		    top: 355px;
+		    left: 23px;
+		}
+		.san{
+			width: 30px;
+			height: 30px;
+			border-top: 10px solid #000;
+			border-bottom: none;
+			border-right: 10px solid transparent;
+			border-left:10px solid transparent;
+
+		}
+		@media screen and (min-width: 700px) and (max-width: 1500px){
+			.box{margin:100px auto;}
+		}
+		@media screen and (min-width: 1501px) and (max-width:2000px){
+			.box{margin: 150px auto;}
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <div class="san"></div> -->
+	<div class="box animated shake">
+		<div id="img"></video></div>
+		
+		<!-- <img src="t017cc7ea75d7539b36.jpg" alt=""> -->
+		<p>冬日暖阳</p>
+		<div class="msg">
+			<a href="https://www.zhihu.com/people/xiao-jing-yan-74/activities"><i class="iconfont icon-zhihulogo" data-placement="top" title="知乎"></i></a>
+			<a href="https://weibo.com/5695601692/profile?topnav=1&wvr=6%22%3E%3Ci%20class&is_all=1"><i class="iconfont icon-weibo-copy" data-placement="top" title="微博"></i></a>
+			<a href="#"><i class="iconfont icon-weixin" data-placement="top" title="微信"></i></a>
+			<a href="#"><i class="iconfont icon-qq" data-placement="top" data-toggle="tooltip" data-original-title="QQ"data-trigger="hover"></i></a>
+		</div>
+	</div>
+	
+	
+		
+	
+
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script>
+		$('i').tooltip("show").siblings().hide();
+		
+
+		$("a i").eq(2).hover(function(){
+			console.log("aa");
+			$("#img").css({
+				"background":"url(weixin.jpg) 0% 0%/contain",
+				"opacity":1
+			})
+		},function(){
+			$("#img").css({
+				"background":"url(t017cc7ea75d7539b36.jpg) 0% 0%/contain",
+				"opacity":1
+			})
+		})	
+		$("a i").eq(3).hover(function(){
+			console.log("aa");
+			$("#img").css({
+				"background":"url(qq.jpg) 0% 0%/contain",
+				"opacity":1
+			})
+		},function(){
+			$("#img").css({
+				"background":"url(t017cc7ea75d7539b36.jpg) 0% 0%/contain",
+				"opacity":1
+			})
+		})	
+
+		
+	
+	
+		
+
+
+	</script>
+</body>
+</html>
